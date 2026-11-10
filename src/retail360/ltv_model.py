@@ -99,7 +99,9 @@ def train_and_evaluate_ltv(
             activation="relu",
             solver="adam",
             learning_rate_init=0.001,
-            max_iter=max(epochs * 4, 200),
+            max_iter=max(epochs * 10, 500),
+            early_stopping=True,
+            n_iter_no_change=15,
             random_state=seed,
         )
         mlp.fit(x_train, y_train)
