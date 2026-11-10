@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail360"
+version = "2.0.0"
+description = "End-to-end SQL RFM feature store, K-Means customer segmentation, neural LTV forecasting, and regional fairness auditing CLI."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Mickey Moore" }]
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.3.0",
+]
+
+[project.optional-dependencies]
+deep-learning = ["tensorflow>=2.15.0", "fairlearn>=0.10.0"]
+dev = ["pytest>=7.4.0"]
+
+[project.scripts]
+retail360 = "retail360.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
