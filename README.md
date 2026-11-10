@@ -24,8 +24,6 @@ An end-to-end Python CLI and data engineering pipeline that transforms relationa
 Retail-360-Customer-Lifecycle-Engine/
 ├── pyproject.toml
 ├── README.md
-├── notebooks/
-│   └── Retail360_Customer_Segmentation_Engine.ipynb  # Original exploratory research notebook
 ├── src/
 │   └── retail360/
 │       ├── __init__.py
