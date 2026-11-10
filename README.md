@@ -1,5 +1,7 @@
 # Retail-360: Customer Lifecycle & Neural LTV Engine
 
+[![Retail-360 CI Pipeline](https://github.com/mickeywmoore/Retail-360-Customer-Lifecycle-Engine/actions/workflows/ci.yml/badge.svg)](https://github.com/mickeywmoore/Retail-360-Customer-Lifecycle-Engine/actions/workflows/ci.yml)
+
 An end-to-end Python CLI and data engineering pipeline that transforms relational e-commerce transaction logs into an RFM (Recency, Frequency, Monetary) feature store, segments customer personas via K-Means clustering, forecasts 90-day Customer Lifetime Value (LTV) with a multi-layer neural regressor, and audits regional error disparity for algorithmic fairness.
 
 ---
